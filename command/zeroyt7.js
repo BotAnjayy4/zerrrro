@@ -297,6 +297,7 @@ break
 case 'hidetag':
 if (!m.isGroup) throw mess.group
 if (!isGroupAdmins && !m.key.fromMe) throw mess.admin
+if (isOwner) return reply(mess.only.owner)
 var group = await zeroyt7.groupMetadata(m.chat)
 var member = group['participants']
 var mem = []
@@ -313,6 +314,7 @@ break
 case 'tagall': case 'infoall':
 if (!m.isGroup) throw mess.group
 if (!isGroupAdmins && !m.key.fromMe) throw mess.admin
+if (isOwner) return reply(mess.only.owner)
 let startnum = 1
 let teks = `*_Tag All Member_*\n*Pesan : ${q ? q : '-'}*\n\n`
 for (let mem of groupMembers) {
@@ -419,7 +421,7 @@ let vcard = `BEGIN:VCARD\n` // metadata of the contact card
 + `END:VCARD`
 let msg = await zeroyt7.sendMessage(m.chat, { contacts: { displayName: `${ownername}`, contacts: [{ vcard }] } }, { quoted: m })
 let buttons3 = [
-{buttonId: `menu`, buttonText: {displayText: '►BACK MENU '}, type: 1},
+{buttonId: `MENU`, buttonText: {displayText: '►KEMBALI '}, type: 1},
 ]
 let buttonMessage3 = {
 text: `DONT NOT SPAM OWNER!! `,
