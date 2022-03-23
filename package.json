@@ -1,14 +1,14 @@
 {
-"name": "Zero-YT7",
+"name": "X1Botz",
 "version": "1.1.0",
-"description": "Please Subscribe Me On Youtube Zero YT7",
+"description": "Ainh macan",
 "main": "start.js",
 "type": "commonjs",
 "scripts": {
 "start": "node start.js"
 },
 "keywords": [],
-"author": "Zero YT7",
+"author": "InzGG.",
 "license": "MIT",
 "dependencies": {
 "@adiwajshing/baileys-md": "github:adiwajshing/baileys#multi-device",
