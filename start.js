@@ -84,13 +84,11 @@ ppgroup = 'https://i.ibb.co/t2m9fFt/88876ba5bb74.jpg'
 }
 
 if (anu.action == 'add') {
-zeroyt7.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Welcome To *${metadata.subject}* @${num.split("@")[0]}
-Silahkan Intro Dulu Kak😇
+zeroyt7.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Hallo To *${metadata.subject}* @${num.split("@")[0]}
+Baru Join? Jangan Keluar Klo Udh Masuk, Bot Online 24Jam😎👌🏻
 
-🌍Nama :
-🗺Umur :
-☎Asal Kota :
-📦Gender :
+Kenalin Saya
+X1Botz, Tugas Saia Menghibur, Jangan Hina Saia Klo Msih Pake Sc Orang
 
 Semoga Betah Ya Kak
 Jangan Lupa Patuhi Rules Groupnya` })
